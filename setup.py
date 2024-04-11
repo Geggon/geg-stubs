@@ -1,7 +1,7 @@
 from setuptools import find_packages, setup
 
 setup(
-    name='stubs',
+    name='geg-stubs',
     version='1.0.0',
     description='Tools for setting up stubs and mocks.',
     author='Geg',
