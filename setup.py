@@ -1,34 +1,19 @@
-from setuptools import setup, find_packages
-import codecs
-import os
+from setuptools import find_packages, setup
 
-here = os.path.abspath(os.path.dirname(__file__))
-
-with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
-    long_description = "\n" + fh.read()
-
-VERSION = '0.0.1'
-DESCRIPTION = 'Test'
-LONG_DESCRIPTION = 'Stubs.'
-
-# Setting up
 setup(
-    name="vidstream",
-    version=VERSION,
-    author="NeuralNine (Florian Dedov)",
-    author_email="<mail@neuralnine.com>",
-    description=DESCRIPTION,
-    long_description_content_type="text/markdown",
-    long_description=long_description,
+    name='stubs',
+    version='1.0.0',
+    description='Tools for setting up stubs and mocks.',
+    author='Geg',
+    author_email='emtastan@gmx.de',
+    url='http://github.com/Geggon/geg-stubs',
+    license='MIT License',
+    keywords='test',
     packages=find_packages(),
-    install_requires=['opencv-python', 'pyautogui', 'pyaudio'],
-    keywords=['python', 'video', 'stream', 'video stream', 'camera stream', 'sockets'],
-    classifiers=[
-        "Development Status :: 1 - Planning",
-        "Intended Audience :: Developers",
-        "Programming Language :: Python :: 3",
-        "Operating System :: Unix",
-        "Operating System :: MacOS :: MacOS X",
-        "Operating System :: Microsoft :: Windows",
-    ]
+    classifiers=(
+        'Programming Language :: Python',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.5',
+    ),
 )
